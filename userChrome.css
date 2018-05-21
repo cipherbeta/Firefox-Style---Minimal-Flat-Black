@@ -1,0 +1,148 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+:root:-moz-lwtheme-brighttext {
+    --chrome-background-color: #0f0f0f !important;
+    --chrome-secondary-background-color: #000 !important;
+    --chrome-color: #707070 !important;
+    --url-and-searchbar-background-color: #000000 !important;
+    --background-color: #0f0f0f !important;
+}
+
+#TabsToolbar {
+    /* not needed anymore? */
+    margin-top: -1px !important;
+    /*  */
+    margin-left: 0 !important;
+    margin-right: 140px !important;
+    max-height: 32px !important;
+    margin-bottom: -32px !important;
+}
+
+#TabsToolbar .titlebar-placeholder[type="pre-tabs"] {
+    display: none !important;
+}
+
+#new-tab-button,
+.tabs-newtab-button {
+    fill: var(--chrome-color) !important;
+}
+
+/* tab line - adjust color & size */
+
+.tab-line {
+    background-color: #e7e8eb !important;
+    height: -1px !important;
+}
+
+/* Remove padding above tabbar in compact mode */
+
+#main-window[sizemode="normal"]>#titlebar {
+    -moz-appearance: initial !important;
+}
+
+:root {
+    --tabs-border: transparent !important;
+}
+
+.tabbrowser-tab::after,
+.tabbrowser-tab::before {
+    border-left: none !important;
+}
+
+#urlbar,
+.searchbar-textbox {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#nav-bar {
+    margin-top: 0px !important;
+    border-top: 0px !important;
+    box-shadow: none !important;
+}
+
+.titlebar-placeholder {
+    display: none !important;
+}
+
+#urlbar {
+    opacity: 1 !important;
+}
+
+#urlbar .urlbar-input-box {
+    opacity: 1 !important;
+}
+
+#urlbar,
+.searchbar-textbox {
+    border: 0px !important;
+    height: 20px !important;
+}
+
+#urlbar {
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+}
+
+#urlbar-container {
+    max-width: 700px !important;
+}
+
+.tab-background {
+    border-top: none !important;
+}
+
+
+.tabs-newtab-button,
+#new-tab-button,
+#alltabs-button {
+    color: rgba(240, 240, 240, 1);
+    border-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+
+/* Hides the favorites star, pocket reader button, and reader mode button. */
+#star-button-box,
+#pocket-button-box,
+#reader-mode-button,
+.tabs-newtab-button {
+    display: none !important;
+}
+
+/* Forces navbar to only be 35% view width to make room for tabs. */
+#nav-bar-customization-target {
+    max-width: 35vw !important;
+}
+
+/* Forces tabs to 60% view width, with some padding to play nice with navbar. */
+#tabbrowser-tabs {
+    max-width: 60vw !important;
+    margin-left: 36vw !important;
+    padding-left: 40px !important;
+}
+
+/* Makes tabs visible on navbar. */
+.tabbrowser-tab[visuallyselected="true"]:-moz-lwtheme,
+.tabbrowser-tab:not([visuallyselected="true"]),
+.tabbrowser-tab:-moz-lwtheme {
+    position: relative !important;
+    z-index: 9999 !important;
+}
+
+/* Makes selected tab text color pure white. */
+.tabbrowser-tab[visuallyselected="true"]:-moz-lwtheme {
+    color: #fff !important;
+}
+
+/* Removes background color from tabbar */
+#TabsToolbar,
+#navigator-toolbox {
+    background-color: none !important;
+}
+
+/* double check to make sure tabbar is visible on nav */
+.tabbrowser-tab[visuallyselected="true"],
+.tabbrowser-tab[visuallyselected="false"] {
+    z-index: 2 !important;
+}
