@@ -15,7 +15,7 @@
     margin-left: 0 !important;
     margin-right: 140px !important;
     max-height: 32px !important;
-    margin-bottom: -32px !important;
+    margin-bottom: -30px !important;
 }
 
 #TabsToolbar .titlebar-placeholder[type="pre-tabs"] {
@@ -92,6 +92,10 @@
     border-top: none !important;
 }
 
+#nav-bar {
+    height: 30px !important;
+}
+
 
 .tabs-newtab-button,
 #new-tab-button,
@@ -113,6 +117,8 @@
 /* Forces navbar to only be 35% view width to make room for tabs. */
 #nav-bar-customization-target {
     max-width: 35vw !important;
+    padding-left: 20px !important;
+    height: 32px !important;
 }
 
 /* Forces tabs to 60% view width, with some padding to play nice with navbar. */
